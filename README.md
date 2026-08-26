@@ -19,3 +19,6 @@ Found at `/etc/nginx` by default. Full path: `/etc/nginx/nginx.conf`.
 - `Events Block`: managing connections and threading
 - `HTTP Block`: handles everything related to web traffic, contains server blocks (like virtual hosts) and settings for HTTP optimizations and security
 - `Server Block`: defines how nginx handles requests for different domains and subdomains
+
+## Modules
+
