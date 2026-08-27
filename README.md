@@ -38,6 +38,8 @@ Found at `/etc/nginx` by default. Full path: `/etc/nginx/nginx.conf`.
 - `nginx -v`: checks the nginx version
 - `nginx -V`: provides detailed build and config info, including modules
 - `nginx -t`: checks the nginx configuration for any issues
-- `nginx -h`: 
-- `nginx -h`: 
-- `nginx -h`: 
+- `nginx -T`: useful for sharing config when seeking support
+- `nginx -s`: sends signals to nginx master process
+- `sudo systemctl reload nginx`
+- `sudo systemctl restart nginx`
+- `sudo systemctl status nginx`
