@@ -42,4 +42,5 @@ Found at `/etc/nginx` by default. Full path: `/etc/nginx/nginx.conf`.
 - `nginx -s`: sends signals to nginx master process
 - `sudo systemctl reload nginx`
 - `sudo systemctl restart nginx`
+- `sudo systemctl start nginx`
 - `sudo systemctl status nginx`
