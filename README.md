@@ -44,3 +44,5 @@ Found at `/etc/nginx` by default. Full path: `/etc/nginx/nginx.conf`.
 - `sudo systemctl restart nginx`
 - `sudo systemctl start nginx`
 - `sudo systemctl status nginx`
+
+ln -s /etc/nginx/sites-available/anfitriaolocal /etc/nginx/sites-enabled
