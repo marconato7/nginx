@@ -13,3 +13,9 @@ sudo apt install nginx -y
 ```bash
 docker compose up --build --force-recreate -d
 ```
+
+## misc.
+
+```bash
+netstat -nltup
+```
