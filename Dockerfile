@@ -1,13 +1,7 @@
 FROM nginx:latest
 
-RUN mkdir -p /etc/nginx/sites-enabled
+COPY observatorio.marilia.local/observatorio.marilia.local.conf /etc/nginx/conf.d/observatorio.marilia.local.conf
 
-RUN mkdir -p /etc/nginx/sites-available/anfitriaolocal
+RUN mkdir -p /var/www/observatorio.marilia.local
 
-COPY anfitriaolocal.conf /etc/nginx/sites-available/anfitriaolocal/anfitriaolocal.conf
-
-RUN mkdir -p /var/www/anfitriaolocal
-
-COPY index.html /var/www/anfitriaolocal/index.html
-
-RUN ln -s /etc/nginx/sites-available/anfitriaolocal /etc/nginx/sites-enabled
+COPY observatorio.marilia.local/observatorio.marilia.local.html /var/www/observatorio.marilia.local/observatorio.marilia.local.html
