@@ -1,7 +1,10 @@
 FROM nginx:latest
 
-COPY observatorio.marilia.local/observatorio.marilia.local.conf /etc/nginx/conf.d/observatorio.marilia.local.conf
+COPY nginx.local/nginx.local.conf /etc/nginx/conf.d/nginx.local.conf
 
-RUN mkdir -p /var/www/observatorio.marilia.local
+RUN mkdir -p /var/www/nginx.local
 
-COPY observatorio.marilia.local/observatorio.marilia.local.html /var/www/observatorio.marilia.local/observatorio.marilia.local.html
+COPY nginx.local/nginx.local.html /var/www/nginx.local/nginx.local.html
+
+COPY nginx.local/nginx.local.crt /etc/nginx/certs/nginx.local.crt
+COPY nginx.local/nginx.local.key /etc/nginx/certs/nginx.local.key
